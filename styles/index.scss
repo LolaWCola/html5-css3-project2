@@ -1,0 +1,155 @@
+@import 'variables.scss';
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: $color-black;
+    min-height: 100vh;
+    display: flex;
+}
+
+.badge {
+    position: absolute;
+    left: 276px;
+    width: 122px;
+    height: 123px;
+    overflow: hidden;
+}
+
+.rectangle {
+    width: 25px;
+    height: 147px;
+    position: absolute;
+    left: -40px;
+    top: -27px;
+    transform: rotate(45deg);
+}
+
+.rectangle>span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-white;
+    background: $color-red;
+    padding: 3px 37px;
+}
+
+.price-table {
+    display: flex;
+    margin: auto;
+}
+
+.price-card {
+    overflow: hidden;
+    position: relative;
+    max-width: 380px;
+    background: $color-gray;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+    margin-right: 18px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+    &__title {
+        margin: 33px auto;
+        text-align: center;
+        color: $text-white;
+        display: flex;
+        flex-direction: column;
+        &-name {
+            font-size: 35px;
+            line-height: 43px;
+            font-weight: 700;
+            color: $text-white;
+            padding: 0;
+        }
+        &-description {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: $color-light-white;
+            margin: 0;
+        }
+    }
+    &__price {
+        min-width: 380px;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 67px;
+        text-align: center;
+        color: $text-white;
+        padding: 19px 110px;
+        margin-top: 33px;
+        margin-bottom: 0;
+    }
+    &__description {
+        margin: 40px 26px;
+        max-height: 36px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: $color-light-white;
+    }
+    &__options-list {
+        max-width: 380px;
+        max-height: 300px;
+        padding: 0;
+        border: none;
+        margin-top: 0;
+        margin-bottom: 39px;
+        &_item {
+            max-height: 50px;
+            background: $color-gray;
+            mix-blend-mode: normal;
+            list-style-position: inside;
+            padding: 16px 21px 16px 22px;
+            &-text {
+                padding: 0;
+                padding-left: 15px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                color: $color-light-white;
+            }
+        }
+        &_item:nth-child(odd) {
+            background: $color-grey;
+            mix-blend-mode: normal;
+        }
+    }
+    &__order-btn {
+        border-radius: 20px;
+        min-width: 154px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $text-white;
+        border: none;
+        display: flex;
+        margin: 0 auto 40px auto;
+        justify-content: center;
+        padding: auto;
+        padding: 11px;
+        align-content: center;
+    }
+}
+
+.price {
+    &__small {
+        background-color: $color-green;
+        list-style-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+    }
+    &__medium {
+        background-color: $color-blue;
+        list-style-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+    }
+    &__large {
+        background-color: $color-orange;
+        list-style-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+    }
+}
