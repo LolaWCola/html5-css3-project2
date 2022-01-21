@@ -1,6 +1,6 @@
 # Price Table Project
 
-#https://lolawcola.github.io/vscode-git-test-2/
+#https://lolawcola.github.io/html5-css3-project2/
 
 Layout supports mobile and desktop (up-to-1360) versions
 
